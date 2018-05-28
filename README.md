@@ -1,12 +1,17 @@
-# SpecTor A Coin Backed by A Business.
+# SpecTor
 
-https://spector.org
+X14 PoS Coin
 
-UNIX BUILD NOTES
+https://spector.com
+
+# UNIX BUILD NOTES
 ====================
 
-To Build SpecTor Headless 
+To Build SpecTor Headless Wallet Daemon.
 -----------------
+
+# Firstly ensure your system has all the Required tools in order to build SpecTor Correctly with no issue's. Please commit these commands through the Terminal of your choice.
+
 
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 
@@ -21,6 +26,15 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 sudo apt-get install libqrencode-dev
+
+
+
+# Now you have all files Required by SpecTor's code in order to build the Wallet.
+
+
+
+# Now we proceed onto making the SpecTor Wallet. Again use your preferred Terminal
+
 
 git clone https://github.com/SpecTorSCTR/SpecTor.git
 
@@ -53,8 +67,15 @@ LD_LIBRARY_PATH=/usr/local/lib
 export LD_LIBRARY_PATH
 
 
-To Build SpecTor Qt Wallet
+
+# You now have spectord Ready to run and connect to the network.
+
+
+# To Build SpecTor Qt Wallet
 ------------------
+
+# Firstly ensure your system has all the Required tools in order to build SpecTor Correctly with no issue's. Please commit these commands through the Terminal of your choice.
+
 
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 
@@ -66,6 +87,16 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 sudo apt-get install libqrencode-dev
+
+
+
+# Now you have all files Required by SpecTor's code in order to build the Wallet.
+
+
+
+# Now we proceed onto making the SpecTor Wallet. Again use your preferred Terminal
+
+
 
 git clone https://github.com/SpecTorSCTR/SpecTor.git
 
