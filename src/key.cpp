@@ -696,7 +696,7 @@ bool CKey::Derive(CKey& keyChild, unsigned char ccChild[32], unsigned int nChild
     assert(IsValid());
     assert(IsCompressed());
     unsigned char out[64];
-    LockObject(out);
+    LockObject out;
     if ((nChild >> 31) == 0) {
         CPubKey pubkey = GetPubKey();
         assert(pubkey.begin() + 33 == pubkey.end());
