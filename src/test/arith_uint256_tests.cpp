@@ -223,7 +223,6 @@ BOOST_AUTO_TEST_CASE( unaryOperators ) // !    ~    -
 #define CHECKBITWISEOPERATOR(_A_,_B_,_OP_)                              \
     for (unsigned int i = 0; i < 32; ++i) { TmpArray[i] = _A_##Array[i] _OP_ _B_##Array[i]; } \
     BOOST_CHECK(arith_uint256V(std::vector<unsigned char>(TmpArray,TmpArray+32)) == (_A_##L _OP_ _B_##L));
-
 #define CHECKASSIGNMENTOPERATOR(_A_,_B_,_OP_)                           \
     TmpL = _A_##L; TmpL _OP_##= _B_##L; BOOST_CHECK(TmpL == (_A_##L _OP_ _B_##L));
 
