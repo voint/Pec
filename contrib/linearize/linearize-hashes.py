@@ -8,7 +8,6 @@
 #
 
 import json
-import struct
 import re
 import base64
 import httplib
