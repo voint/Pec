@@ -167,7 +167,7 @@ class LRUCache {
   HandleTable table_;
 };
 
-LRUCache::LRUCache()
+LRUCache::~LRUCache()
     : usage_(0) {
   // Make empty circular linked list
   lru_.next = &lru_;
