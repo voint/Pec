@@ -33,7 +33,7 @@ static int zmq_send_multipart(void *sock, const void* data, size_t size, ...)
             zmqError("Unable to initialize ZMQ msg");
             return -1;
         }
-
+    va_end();
         void *buf = zmq_msg_data(&msg);
         memcpy(buf, data, size);
 
