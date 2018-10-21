@@ -29,7 +29,7 @@ ZerocoinParams::ZerocoinParams(CBigNum N, uint32_t securityLevel) {
 	this->initialized = true;
 }
 
-AccumulatorAndProofParams::AccumulatorAndProofParams() {
+AccumulatorAndProofParams::k_prime() {
 	this->initialized = false;
 }
 
