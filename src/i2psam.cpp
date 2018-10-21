@@ -82,7 +82,7 @@ Socket::Socket(const std::string& SAMHost, uint16_t SAMPort, const std::string& 
         handshake();
 }
 
-Socket::Socket(const sockaddr_in& addr, const std::string &minVer, const std::string& maxVer)
+    Socket::Socket(const sockaddr_in& addr, const std::string &minVer, const std::string& maxVer)
     : socket_(SAM_INVALID_SOCKET), servAddr_(addr), minVer_(minVer), maxVer_(maxVer)
 {
 #ifdef WIN32
@@ -95,7 +95,7 @@ Socket::Socket(const sockaddr_in& addr, const std::string &minVer, const std::st
         handshake();
 }
 
-Socket::Socket(const Socket& rhs)
+    Socket::Socket(const Socket& rhs)
     : socket_(SAM_INVALID_SOCKET), servAddr_(rhs.servAddr_), minVer_(rhs.minVer_), maxVer_(rhs.maxVer_)
 {
 #ifdef WIN32
