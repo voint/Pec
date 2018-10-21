@@ -2,8 +2,6 @@
 
 X14 PoS Coin
 
-https://spector.com
-
 # UNIX BUILD NOTES
 ====================
 
