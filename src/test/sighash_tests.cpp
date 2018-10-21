@@ -22,7 +22,7 @@ extern UniValue read_json(const std::string& jsondata);
 // Old script.cpp SignatureHash function
 uint256 static SignatureHashOld(CScript scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType)
 {
-    if (nIn >= txTo.vin.size())
+    if nIn >= txTo.vin.size()
     {
         printf("ERROR: SignatureHash() : nIn=%d out of range\n", nIn);
         return 1;
@@ -53,7 +53,7 @@ uint256 static SignatureHashOld(CScript scriptCode, const CTransaction& txTo, un
     {
         // Only lock-in the txout payee at same index as txin
         unsigned int nOut = nIn;
-        if (nOut >= txTmp.vout.size())
+        if nOut >= txTmp.vout.size()
         {
             printf("ERROR: SignatureHash() : nOut=%d out of range\n", nOut);
             return 1;
