@@ -1106,7 +1106,7 @@ void ThreadSocketHandler()
                     LogPrintf("socket receive timeout: %ds\n", nTime - pnode->nLastRecv);
                     pnode->fDisconnect = true;
                 }
-                else if (pnode->nPingNonceSent && pnode->nPingUsecStart + TIMEOUT_INTERVAL * 1000000 < GetTimeMicros())
+                else if (pnode->nPingNonceSent && pnode->nPingUsecStart + TIMEOUT_INTERVAL * 10000 < GetTimeMicros())
                 {
                     LogPrintf("ping timeout: %fs\n", 0.000001 * (GetTimeMicros() - pnode->nPingUsecStart));
                     pnode->fDisconnect = true;
