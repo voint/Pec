@@ -1,9 +1,9 @@
 Building SpecTor
 
-See doc/readme-qt.rst for instructions on building SpecTor QT,
+See doc/readme-qt.rst for instructions on building Pec QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of SpecTor.
+implementation of Pec.
 
 See doc/build-*.txt for instructions on building spectord,
 the intended-for-services, no-graphical-interface, reference
-implementation of SpecTor.
+implementation of Pec.
