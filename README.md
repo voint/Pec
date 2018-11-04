@@ -1,4 +1,4 @@
-# SpecTor
+# Pec
 
 X14 PoS Coin
 
