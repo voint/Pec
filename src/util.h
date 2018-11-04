@@ -39,7 +39,7 @@
 class uint256;
 
 static const int64_t COIN = 100000000;
-static const int64_t CENT = 1000000;
+static const int64_t CENT = 10000;
 
 typedef int64_t CAmount;
 
@@ -356,7 +356,7 @@ inline int64_t GetPerformanceCounter()
 #else
     timeval t;
     gettimeofday(&t, NULL);
-    nCounter = (int64_t) t.tv_sec * 1000000 + t.tv_usec;
+    nCounter = (int64_t) t.tv_sec * 10000 + t.tv_usec;
 #endif
     return nCounter;
 }
